@@ -1,0 +1,23 @@
+package o;
+
+public class Equip extends Toy{
+    public int n;
+    public String []toy_eq;
+    public int []price_eq;
+    public int []tip_eq;
+
+    public Equip(){
+        try {
+            this.n = 9;
+            this.toy_eq = new String[n];
+            this.price_eq = new int[n];
+            this.tip_eq = new int[n];
+            for (int i = 0; i < n; i++) {
+                int j = i;
+                toy_eq[i] = toy[j];
+                price_eq[i] = price[j];
+                tip_eq[i] = tip[j];
+            }
+        } catch(Exception e){}
+    }
+}
