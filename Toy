@@ -1,0 +1,17 @@
+package o;
+
+public class Toy{
+    public int m = 0;
+    public String[] toy;
+    public int[] price;
+    public int[] tip;
+
+    public Toy() {
+        try {
+            this.m = 9;
+            this.toy = new String[]{"Маленькая Машинка", "Пирамидка", "Трактор", "Кукла", "Мяч", "Кубики", "Юла", "Шахматы", "Мягкая игрушка"};
+            this.price = new int[]{95, 175, 120, 345, 350, 120, 74, 230, 540};
+            this.tip = new int[]{0, 1, 2, 0, 2, 0, 1, 2, 1};
+        } catch(Exception e){}
+    }
+}
